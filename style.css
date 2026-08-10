@@ -279,6 +279,35 @@ button {
         bottom: 12%;
     }
 }
+@media (max-width: 767px) {
+
+    .nav-links.mobile-open {
+        display: flex;
+
+        position: absolute;
+        top: 60px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+        gap: 20px;
+
+        background: var(--background);
+        border-bottom: 1px solid var(--warm-beige);
+
+        z-index: 100;
+    }
+
+}
+
+
+
+
+
+
 
 
 
