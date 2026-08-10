@@ -232,6 +232,7 @@ button {
     }
 
     .hero {
+        position: relative;
         min-height: calc(100vh - 60px);
         padding: 60px 20px;
     }
@@ -307,30 +308,21 @@ button {
 .hero-cross,
 .hero-coffee {
     position: absolute;
-    pointer-events: none;
-    opacity: 0.65;
-}
-
-.hero-cross {
-    font-size: 14px;
-}
-
-.hero-cross-2 {
-    font-size: 11px;
-}
-
-.hero-coffee {
     top: 55%;
     left: 8%;
     font-size: 16px;
+    opacity: 0.65;
+    pointer-events: none;
 }
 
 .hero-coffee-2 {
-    top: 72%;
+    position: absolute;
+    top: 70%;
     right: 8%;
     font-size: 12px;
+    opacity: 0.65;
+    pointer-events: none;
 }
-
 
 
 
