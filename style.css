@@ -54,3 +54,59 @@ button {
     font: inherit;
     cursor: pointer;
 }
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.site-header {
+    width: 100%;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--warm-beige);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--coffee-brown);
+}
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 1.5rem;
+    color: var(--espresso);
+}
+
+
