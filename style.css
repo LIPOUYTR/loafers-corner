@@ -320,10 +320,14 @@ button {
 }
 
 .hero-coffee {
+    top: 55%;
+    left: 8%;
     font-size: 16px;
 }
 
 .hero-coffee-2 {
+    top: 72%;
+    right: 8%;
     font-size: 12px;
 }
 
