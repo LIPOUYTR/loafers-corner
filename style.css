@@ -304,6 +304,59 @@ button {
 
 }
 /* Tiny Hero Decorations */
+/* =========================================
+   STORY COFFEE DECORATION
+   ========================================= */
+
+.story-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.story-coffee {
+    position: absolute;
+
+    width: 230px;
+    height: auto;
+
+    right: -70px;
+    top: 180px;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+/* Keep all Story content above the coffee */
+
+.story-intro,
+.story-block,
+.story-ending {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .story-coffee {
+        width: 190px;
+
+        right: -65px;
+        top: 210px;
+
+        opacity: 0.95;
+    }
+
+}
+
+
+
+
+
+
 
 
 
