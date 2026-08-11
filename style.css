@@ -303,54 +303,542 @@ button {
     }
 
 }
-/* Tiny Hero Decorations */
+
 /* =========================================
-   STORY COFFEE DECORATION
+   STORY — EDITORIAL HERITAGE STYLE
    ========================================= */
 
 .story-section {
     position: relative;
     overflow: hidden;
+
+    width: 100%;
+
+    background: #F4EFE3;
+    color: #26352B;
 }
+
+
+/* =========================================
+   STORY INTRO
+   ========================================= */
+
+.story-intro {
+    position: relative;
+    z-index: 3;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 90px 7vw 70px;
+}
+
+.story-label {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+    padding-bottom: 13px;
+
+    color: #A66E48;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.story-label::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 80px;
+    height: 1px;
+
+    background: #A66E48;
+}
+
+
+/* =========================================
+   MAIN STORY TITLE
+   ========================================= */
+
+.story-intro h2 {
+    max-width: 850px;
+
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3.8rem, 8vw, 8rem);
+
+    font-weight: normal;
+
+    line-height: 0.86;
+
+    letter-spacing: -5px;
+
+    color: #26352B;
+}
+
+.story-intro-text {
+    max-width: 620px;
+
+    margin-top: 38px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.15rem;
+
+    line-height: 1.75;
+
+    color: #49443C;
+}
+
+
+/* =========================================
+   DECORATIVE STAR
+   ========================================= */
+
+.story-intro::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 28px;
+
+    color: #A66E48;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================
+   COFFEE SPLASH
+   ========================================= */
 
 .story-coffee {
     position: absolute;
 
-    width: 95px;
+    width: 330px;
     height: auto;
 
-    right: -25px;
-    top: 210px;
+    right: 3vw;
+    top: 390px;
 
-    z-index: 1;
+    z-index: 2;
 
     pointer-events: none;
+
+    transform: rotate(-3deg);
 }
 
-/* Keep all Story content above the coffee */
 
-.story-intro,
-.story-block,
+/* =========================================
+   STORY BLOCK
+   ========================================= */
+
+.story-block {
+    position: relative;
+    z-index: 3;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 7vw 100px;
+}
+
+
+/* =========================================
+   STORY IMAGE
+   ========================================= */
+
+.story-image {
+    width: 100%;
+
+    margin-bottom: 45px;
+
+    overflow: hidden;
+
+    background: #D8C8B5;
+}
+
+.story-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   NUMBER
+   ========================================= */
+
+.story-number {
+    margin-bottom: 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 5.5rem;
+
+    line-height: 0.85;
+
+    color: #B47D59;
+}
+
+
+/* =========================================
+   SMALL LABEL
+   ========================================= */
+
+.story-small {
+    margin-bottom: 18px;
+
+    color: #A66E48;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+/* =========================================
+   STORY HEADING
+   ========================================= */
+
+.story-content h3 {
+    max-width: 850px;
+
+    margin-bottom: 28px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+
+    font-weight: 800;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+
+    color: #26352B;
+}
+
+
+/* =========================================
+   STORY TEXT
+   ========================================= */
+
+.story-content p:not(.story-small):not(.story-note) {
+    max-width: 650px;
+
+    margin-bottom: 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    color: #49443C;
+}
+
+
+/* =========================================
+   STORY NOTE
+   ========================================= */
+
+.story-note {
+    margin-top: 28px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 0.95rem;
+
+    font-style: italic;
+
+    color: #A66E48;
+}
+
+
+/* =========================================
+   SECOND STORY AREA
+   ========================================= */
+
+.story-block-reverse {
+    max-width: none;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    padding-left: max(7vw, calc((100vw - 1060px) / 2));
+    padding-right: max(7vw, calc((100vw - 1060px) / 2));
+
+    background: #E8DDCC;
+}
+
+
+/* =========================================
+   DECORATIVE LINE
+   ========================================= */
+
+.story-block::after {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 80px;
+
+    background: #CDBDA9;
+}
+
+
+/* =========================================
+   STORY ENDING
+   ========================================= */
+
 .story-ending {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+
+    padding: 120px 7vw 140px;
+
+    text-align: center;
+
+    background: #26352B;
+
+    color: #F4EFE3;
+}
+
+.story-ending span {
+    display: block;
+
+    margin-bottom: 28px;
+
+    color: #C79570;
+
+    font-size: 1.6rem;
+}
+
+.story-ending h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3.2rem, 8vw, 7rem);
+
+    font-weight: normal;
+
+    line-height: 0.88;
+
+    letter-spacing: -4px;
+
+    color: #F4EFE3;
+}
+
+.story-ending p {
+    margin-top: 28px;
+
+    color: #C79570;
+
+    font-size: 0.68rem;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.story-button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 15px 28px;
+
+    border: 1px solid #F4EFE3;
+
+    background: transparent;
+
+    color: #F4EFE3;
+
+    font-size: 0.68rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: 0.25s ease;
+}
+
+.story-button:hover {
+    background: #F4EFE3;
+    color: #26352B;
 }
 
 
-/* MOBILE */
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+    .story-intro {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .story-block {
+        display: grid;
+
+        grid-template-columns: 0.8fr 1.2fr;
+
+        gap: 80px;
+
+        align-items: center;
+    }
+
+    .story-block .story-image {
+        margin-bottom: 0;
+    }
+
+    .story-coffee {
+        width: 380px;
+
+        right: 4vw;
+        top: 390px;
+    }
+
+    .story-block-reverse {
+        display: block;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 767px) {
 
+    .story-intro {
+        padding: 70px 24px 55px;
+    }
+
+    .story-label {
+        margin-bottom: 25px;
+
+        font-size: 0.6rem;
+
+        letter-spacing: 2.5px;
+    }
+
+    .story-intro h2 {
+        font-size: clamp(3.2rem, 16vw, 5rem);
+
+        line-height: 0.88;
+
+        letter-spacing: -3px;
+    }
+
+    .story-intro-text {
+        max-width: 330px;
+
+        margin-top: 30px;
+
+        font-size: 1rem;
+
+        line-height: 1.75;
+    }
+
+
+    /* Coffee */
+
     .story-coffee {
-        width: 80px;
-        right: -20px;
-        top: 220px;
+        width: 145px;
+
+        right: -35px;
+        top: 300px;
+
+        opacity: 0.95;
+    }
+
+
+    /* Story blocks */
+
+    .story-block {
+        padding: 45px 24px 75px;
+    }
+
+
+    .story-image {
+        margin-bottom: 35px;
+    }
+
+
+    .story-number {
+        font-size: 4.5rem;
+    }
+
+
+    .story-small {
+        font-size: 0.6rem;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .story-content h3 {
+        font-size: clamp(2.1rem, 10vw, 3.3rem);
+
+        line-height: 0.95;
+
+        letter-spacing: -1px;
+    }
+
+
+    .story-content p:not(.story-small):not(.story-note) {
+        font-size: 0.98rem;
+
+        line-height: 1.8;
+    }
+
+
+    .story-block-reverse {
+        padding: 75px 24px;
+    }
+
+
+    .story-block::after {
+        margin-top: 65px;
+    }
+
+
+    .story-ending {
+        padding: 100px 24px 115px;
+    }
+
+
+    .story-ending h2 {
+        font-size: clamp(3rem, 15vw, 5rem);
+
+        letter-spacing: -3px;
     }
 
 }
-
-
-
 
 
 
